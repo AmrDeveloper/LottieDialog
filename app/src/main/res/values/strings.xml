@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">LottieDialog</string>
+    <string name="success_dialog">Success Dialog</string>
+    <string name="notification_dialog">Notification Dialog</string>
+    <string name="location_dialog">Location Dialog</string>
+    <string name="internet_dialog">Internet Dialog</string>
 </resources>
