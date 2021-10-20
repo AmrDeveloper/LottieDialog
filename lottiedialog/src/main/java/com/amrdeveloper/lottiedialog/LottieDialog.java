@@ -195,6 +195,16 @@ public class LottieDialog {
     }
 
     /**
+     * Set dim amount for lottie dialog
+     * @param amount the amount for dim attribute
+     * @return the instance of lottie dialog to make a chain of function easily
+     */
+    public LottieDialog setDialogDimAmount(float amount) {
+        lottieDialog.getWindow().setDimAmount(amount);
+        return this;
+    }
+
+    /**
      * Set the Cancelable option for the lottie dialog
      * @param cancelable the dialog will not cancel by the end user if the value is false
      * @return the instance of lottie dialog to make a chain of function easily
