@@ -17,10 +17,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.launch_success_dialog).setOnClickListener(view -> launchSuccessLottieDialog());
-        findViewById(R.id.launch_notification_dialog).setOnClickListener(view -> launchNotificationLottieDialog());
-        findViewById(R.id.launch_location_dialog).setOnClickListener(view -> launchLocationLottieDialog());
-        findViewById(R.id.launch_internet_dialog).setOnClickListener(view -> launchInternetLottieDialog());
+        Button launchSuccessDialogButton = findViewById(R.id.launch_success_dialog);
+        launchSuccessDialogButton.setOnClickListener(view -> launchSuccessLottieDialog());
+
+        Button launchNotificationDialogButton = findViewById(R.id.launch_notification_dialog);
+        launchNotificationDialogButton.setOnClickListener(view -> launchNotificationLottieDialog());
+
+        Button launchLocationDialogButton = findViewById(R.id.launch_location_dialog);
+        launchLocationDialogButton.setOnClickListener(view -> launchLocationLottieDialog());
+
+        Button launchInternetDialogButton = findViewById(R.id.launch_internet_dialog);
+        launchInternetDialogButton.setOnClickListener(view -> launchInternetLottieDialog());
+
+        Button launchRippleDialogButton = findViewById(R.id.launch_ripple_dialog);
+        launchRippleDialogButton.setOnClickListener(view -> launchRippleLottieDialog());
     }
 
     private void launchSuccessLottieDialog() {
@@ -95,6 +105,21 @@ public class MainActivity extends AppCompatActivity {
                 .setAnimationRepeatCount(LottieDialog.INFINITE)
                 .setMessage("You have no internet connection")
                 .addActionButton(button);
+
+        dialog.show();
+    }
+
+    private void launchRippleLottieDialog() {
+        int orangeColor = ContextCompat.getColor(this, R.color.orange);
+
+        LottieDialog dialog = new LottieDialog(this)
+                .setAnimation(R.raw.ripple)
+                .setAutoPlayAnimation(true)
+                .setDialogHeightPercentage(.2f)
+                .setDialogBackground(Color.BLACK)
+                .setAnimationRepeatCount(LottieDialog.INFINITE)
+                .setMessage("Loading...")
+                .setMessageColor(orangeColor);
 
         dialog.show();
     }

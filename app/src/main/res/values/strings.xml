@@ -4,4 +4,5 @@
     <string name="notification_dialog">Notification Dialog</string>
     <string name="location_dialog">Location Dialog</string>
     <string name="internet_dialog">Internet Dialog</string>
+    <string name="ripple_dialog">Ripple Dialog</string>
 </resources>
