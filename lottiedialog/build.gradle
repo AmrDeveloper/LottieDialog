@@ -28,19 +28,15 @@ android {
     }
 }
 
-task androidSourcesJar(type: Jar) {
-    classifier 'sources'
-    from android.sourceSets.main.java.srcDirs
-}
-
 project.afterEvaluate {
     publishing {
         publications {
             mavenJava(MavenPublication) {
+                from components.release
+
                 groupId = 'com.github.amrdeveloper'
                 artifactId = 'lottiedialog'
                 version = '1.0.0'
-                from components.release
             }
         }
     }
