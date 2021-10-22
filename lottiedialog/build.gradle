@@ -36,9 +36,11 @@ task androidSourcesJar(type: Jar) {
 project.afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
+            mavenJava(MavenPublication) {
+                groupId = 'com.github.amrdeveloper'
+                artifactId = 'lottiedialog'
+                version = '1.0.0'
                 from components.release
-                artifact androidSourcesJar // optional sources
             }
         }
     }
