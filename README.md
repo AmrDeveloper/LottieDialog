@@ -4,6 +4,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b49c133e1a1c4f4bab87354e4713c3bb)](https://www.codacy.com/gh/AmrDeveloper/LottieDialog/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AmrDeveloper/LottieDialog&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/amrdeveloper/lottiedialog/badge)](https://www.codefactor.io/repository/github/amrdeveloper/lottiedialog)
 [![Min API Level](https://img.shields.io/badge/API-%2B16-brightgreen)]()
+![Maven Central](https://img.shields.io/maven-central/v/io.github.amrdeveloper/lottiedialog?color=green)
 [![Jitpack Version](https://jitpack.io/v/AmrDeveloper/Lottiedialog.svg)](https://jitpack.io/#AmrDeveloper/Lottiedialog)
 
 Android Library to create Lottie animation view dialog easily with a lot of customization
@@ -30,21 +31,29 @@ Android Library to create Lottie animation view dialog easily with a lot of cust
 
 ### Add Lottie Dialog to your project
 
-Add line below to your top level `build.gradle`
-
-```groovy
-allprojects {
-    repositories {
-        maven { url "https://jitpack.io" }
-    }
-}
+From Maven Central
+```gradle
+implementation 'io.github.amrdeveloper:lottiedialog:1.0.0'
 ```
-
-Add lines below to your app level `build.gradle`
-
-```groovy
-implementation 'com.github.amrdeveloper:lottiedialog:1.0.0'
+<details>
+  <summary>Or Add LottieDialog from Jitpack.io</summary>
+  
+  Add it in your root build.gradle at the end of repositories
+  
+  ```gradle
+  allprojects {
+      repositories {
+           maven { url 'https://jitpack.io' }
+      }
+  }
 ```
+             
+  Add the dependency      
+
+  ```gradle
+  implementation 'com.github.amrdeveloper:lottiedialog:1.0.0'
+  ```
+</details>
 
 And sync the Gradle.
 
