@@ -9,7 +9,7 @@
 
 Android Library to create Lottie animation view dialog easily with a lot of customization
 
-<img src="media/success_dialog.gif" alt="animated" width="24%"/> <img src="media/location_dialog.gif" alt="animated" width="24%"/>
+<img src="media/success_dialog.gif" alt="animated" width="24%" height="320px"/> <img src="media/location_dialog.gif" alt="animated" width="24%"/>
 <img src="media/no_internet_dialog.gif" alt="animated" width="24%"/> <img src="media/photo_dialog.gif" alt="animated" width="24%"/>
 
 ### Why you should use Lottie Dialog
