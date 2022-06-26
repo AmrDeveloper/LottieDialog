@@ -70,7 +70,7 @@ cancelButton.setOnClickListener(view -> {});
 
 LottieDialog dialog = new LottieDialog(this)
     .setAnimation(R.raw.animation)
-    .setAnimationRepeatCount(LottieDrawable.INFINITE)
+    .setAnimationRepeatCount(LottieDialog.INFINITE)
     .setAutoPlayAnimation(true)
     .setTitle("Title")
     .setTitleColor(Color.WHITE)
